@@ -1,5 +1,5 @@
 # Binary Tree
-a library to invert your primary trees
+a library to do stuff with binary trees i guess
 
 Functions:
 - `Node->Invert()` invert binary tree starting at node
