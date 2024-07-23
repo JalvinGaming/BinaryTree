@@ -1,4 +1,4 @@
-#include <stdlib.h>
+
 class Node
 {
     public:
@@ -16,7 +16,7 @@ class Node
             Node *bucket = left;
             left = right;
             right = bucket;
-            free(bucket);
+            delete bucket;
             if (left != nullptr)
             {
                 left->Invert();
