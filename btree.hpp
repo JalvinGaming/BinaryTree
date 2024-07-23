@@ -1,9 +1,9 @@
+#include <stdlib.h>
 class Node
 {
     public:
         Node *left;
         Node *right;
-        Node *bucket;
         int data;
         Node(Node *_left, Node *_right, int _data)
         {
@@ -13,9 +13,10 @@ class Node
         }
         void Invert()
         {
-            bucket = left;
+            Node *bucket = left;
             left = right;
             right = bucket;
+            free(bucket);
             if (left != nullptr)
             {
                 left->Invert();
