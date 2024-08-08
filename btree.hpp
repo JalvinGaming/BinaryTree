@@ -11,6 +11,12 @@ class Node
             left = _left;
             right = _right;
         }
+        /**
+         * Inverts the binary tree.
+         * 
+         * Example:
+         * `Node->Invert();`
+         */
         void Invert()
         {
             Node *bucket = left;
